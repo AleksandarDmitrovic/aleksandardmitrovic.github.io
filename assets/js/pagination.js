@@ -7,6 +7,7 @@ $(document).ready(function () {
   let currentPage = 1;
 
   function updatePagination() {
+    console.log("currentPage :", currentPage);
     if (currentPage === 1) {
       $page1.show();
       $page2.hide();
