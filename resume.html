@@ -50,14 +50,19 @@
 			<!-- Post -->
 			<section class="post">
 				<div id="resume-link">
-					<a style="border-bottom: none;" href="/resume/Aleksandar Dmitrovic Resume.pdf" download target="_blank" rel="noopener noreferrer"
-						class="fas fa-download"> Download Resume</a>
-					<a style="border-bottom: none;"
-						href=https://docs.google.com/document/d/1cvldc8aFeewUAXYfGM5GYuU1uD2Y1_0WP-4hUcyPi4M/edit?usp=sharing
-						target="_blank" class="fas fa-window-maximize"> Live Resume</a>
+					<a style="border-bottom: none;" href="/resume/Aleksandar Dmitrovic Resume.pdf" download target="_blank" rel="noopener noreferrer" class="fas fa-download"> Download Resume</a>
+					<a style="border-bottom: none;" href="https://docs.google.com/document/d/1cvldc8aFeewUAXYfGM5GYuU1uD2Y1_0WP-4hUcyPi4M/edit?usp=sharing" target="_blank" class="fas fa-window-maximize"> Live Resume</a>
 				</div>
-				<div id="resume" class="image main"><img src="images/resume_page1.png" alt="resume page one" /><img src="images/resume_page2.png" alt="resume page two" /></div>
+				<div id="resume" class="image main">
+					<img id="resume-page1" src="images/resume_page1.png" alt="resume page one" />
+					<img id="resume-page2" src="images/resume_page2.png" alt="resume page two" style="display: none;" />
+				</div>
+				<div class="pagination">
+					<button id="prev" disabled>Previous</button>
+					<button id="next">Next</button>
+				</div>
 			</section>
+			
 
 		</div>
 
