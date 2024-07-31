@@ -3,12 +3,13 @@ import { useGLTF } from "@react-three/drei";
 import { useFrame, useThree } from "@react-three/fiber";
 import { a } from "@react-spring/three";
 
+import mountainIslandScene from "../assets/3d/island_mountain_with_canadian+serbian_flags.glb";
+
 const Island = ({ isRotating, setIsRotating, setCurrentStage, ...props }) => {
   const islandRef = useRef();
   // Get access to the Three.js renderer and viewport
   const { gl, viewport } = useThree();
-  const { nodes, materials } = useGLTF(import.meta.env.S3_GLB_URL);
-  console.log("import.meta.env.S3_GLB_URL :", import.meta.env.S3_GLB_URL);
+  const { nodes, materials } = useGLTF(mountainIslandScene);
 
   // Use a ref for the last mouse x position
   const lastX = useRef(0);
