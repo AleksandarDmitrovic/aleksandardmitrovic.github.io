@@ -4,7 +4,8 @@ on:
   push:
     branches:
       - main
-
+env:
+  VITE_APP_EMAILJS_SERVICE_ID: ${{ secrets.VITE_APP_EMAILJS_SERVICE_ID}}
 jobs:
   build:
     name: Build
