@@ -1,7 +1,13 @@
 import { Link } from "react-router-dom";
-import { arrow } from "../assets/icons";
+import arrow from "../assets/icons/arrow.svg";
 
-const InfoBox = ({ text, link, btnText }) => (
+interface InfoBoxProps {
+  text: string;
+  link: string;
+  btnText: string;
+}
+
+const InfoBox = ({ text, link, btnText }: InfoBoxProps) => (
   <div className="info-box">
     <p className="font-medium sm:text-xl text-center">{text}</p>
     <Link to={link} className="neo-brutalism-white neo-btn">
@@ -43,7 +49,11 @@ const renderContent: {
   ),
 };
 
-const HomeInfo = ({ currentStage }) => {
+interface Props {
+  currentStage: number;
+}
+
+const HomeInfo = ({ currentStage }: Props) => {
   return renderContent[currentStage] || null;
 };
 

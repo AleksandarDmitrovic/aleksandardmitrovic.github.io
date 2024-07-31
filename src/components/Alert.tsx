@@ -1,4 +1,9 @@
-const Alert = ({ type, text }) => {
+interface Props {
+  type: string;
+  text: string;
+}
+
+const Alert = ({ type, text }: Props) => {
   return (
     <div className="absolute top-12 left-0 right-0 flex justify-center items-center">
       <div
