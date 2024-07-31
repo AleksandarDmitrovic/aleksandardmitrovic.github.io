@@ -6,6 +6,7 @@ on:
       - main
 env:
   VITE_APP_EMAILJS_SERVICE_ID: ${{ secrets.VITE_APP_EMAILJS_SERVICE_ID}}
+  S3_GLB_URL: ${{ secrets.S3_GLB_URL}}
 jobs:
   build:
     name: Build
