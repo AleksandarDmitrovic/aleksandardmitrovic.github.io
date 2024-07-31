@@ -61,25 +61,26 @@ const Home = () => {
         className="w-full h-screen bg-transparent"
         camera={{ near: 0.1, far: 1000 }}
       >
-        <Suspense fallback={<Loader />}></Suspense>
-        <directionalLight position={[1, 1, 1]} intensity={2} />
-        <ambientLight intensity={0.5} />
-        <hemisphereLight color="#B1E1FF" groundColor="#000000" />
-        <Sky isRotating={isRotating} />
-        <Island
-          position={islandPosition}
-          scale={islandScale}
-          rotation={islandRotation}
-          isRotating={isRotating}
-          setIsRotating={setIsRotating}
-          setCurrentStage={setCurrentStage}
-        />
-        <Plane
-          position={planePosition}
-          scale={planeScale}
-          isRotating={isRotating}
-          rotation={[0, 20, 0]}
-        />
+        <Suspense fallback={<Loader />}>
+          <directionalLight position={[1, 1, 1]} intensity={2} />
+          <ambientLight intensity={0.5} />
+          <hemisphereLight color="#B1E1FF" groundColor="#000000" />
+          <Sky isRotating={isRotating} />
+          <Island
+            position={islandPosition}
+            scale={islandScale}
+            rotation={islandRotation}
+            isRotating={isRotating}
+            setIsRotating={setIsRotating}
+            setCurrentStage={setCurrentStage}
+          />
+          <Plane
+            position={planePosition}
+            scale={planeScale}
+            isRotating={isRotating}
+            rotation={[0, 20, 0]}
+          />
+        </Suspense>
       </Canvas>
     </section>
   );
