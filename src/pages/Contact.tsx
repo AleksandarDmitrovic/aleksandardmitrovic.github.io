@@ -28,10 +28,6 @@ const Contact = () => {
     setIsLoading(true);
     setCurrentAnimation("hit");
 
-    console.log(
-      "import.meta.env.VITE_APP_EMAILJS_SERVICE_ID :",
-      import.meta.env.VITE_APP_EMAILJS_SERVICE_ID
-    );
     emailjs
       .send(
         import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
@@ -64,7 +60,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="relative flex lg:flex-row flex-col max-containe h-[100vh]">
+    <section className="relative flex lg:flex-row flex-col max-container h-[100vh]">
       {alert.show && <Alert {...alert} />}
       <div className="flex-1 min-w-[50%] flex flex-col">
         <h1 className="head-text">Get In Touch</h1>
