@@ -9,6 +9,7 @@ import scheduler from "./scheduler.png";
 import tidyTask from "./tidyTask.gif";
 import tinyapp from "./tinyapp.png";
 import tweeter from "./tweeter.png";
+import nextcart from "./nextcart.png";
 
 export {
   hero,
@@ -22,4 +23,5 @@ export {
   tidyTask,
   tinyapp,
   tweeter,
+  nextcart,
 };

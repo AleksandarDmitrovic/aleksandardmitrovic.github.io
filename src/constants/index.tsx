@@ -5,6 +5,7 @@ import {
   tidyTask,
   tinyapp,
   tweeter,
+  nextcart,
 } from "../assets/images";
 import {
   car,
@@ -211,6 +212,15 @@ export const socialLinks = [
 ];
 
 export const projects = [
+  {
+    iconUrl: pricewise,
+    appImage: nextcart,
+    theme: "btn-back-red",
+    name: "Next-Cart",
+    description:
+      "A mini e-commerce application that was built with Next.js 13. Built with Typescript, MongoDB, TailwindCSS, Prisma, and DaisyUI",
+    link: "https://github.com/AleksandarDmitrovic/next-cart",
+  },
   {
     iconUrl: pricewise,
     appImage: symposium_gif,
